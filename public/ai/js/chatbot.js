@@ -227,7 +227,7 @@
             const reply = data.reply || data.message || data.response || 'No reply received.';
             appendMessage(reply, 'bot');
         } catch (err) {
-            appendMessage('Sorry, I could not reach the chatbot service. ' + err.message, 'bot');
+            appendMessage('Sorry, Internet unstable, please try again.');
         } finally {
             setLoading(false);
         }
